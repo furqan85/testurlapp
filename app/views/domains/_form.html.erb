@@ -1,0 +1,7 @@
+<div id="form">
+  <% form_for(:domain, :url=>{:controller=>:domains, :action=>:index}) do |f| %>
+    <%= label_tag :url, "Website URL" %>
+    <%= f.text_field :url, :size=>'30', :class=>'url text required' %>
+    <%#= f.submit "Submit" %>
+  <% end %>
+</div>

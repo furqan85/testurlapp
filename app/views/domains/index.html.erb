@@ -1,0 +1,13 @@
+<%=javascript_include_tag 'parseUri' %>
+<%=javascript_include_tag 'domains/index' %>
+<%= render :partial=>"form" %>
+
+<div id="listing">
+  <ul class="valid">
+  <% for domain in @domains do %>
+    <li>
+      <%= domain %>
+    </li>
+  <% end %>
+  </ul>
+</div>
